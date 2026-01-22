@@ -29,14 +29,14 @@ jobs:
       - name: Install documentation dependencies
         run: |
           python -m pip install --upgrade pip
-          # If you have docs/requirements.txt, install it
+          # Install doc-specific requirements if present
           if [ -f docs/requirements.txt ]; then pip install -r docs/requirements.txt; fi
-          # Ensure Sphinx is available
-          pip install sphinx
+          # Core Sphinx + Markdown support
+          pip install sphinx myst-parser
 
       - name: Build Sphinx HTML
         run: |
-          # If your docs import code from ./src (autodoc), this makes it importable:
+          # Allow autodoc to import code from ./src if needed
           PYTHONPATH=src sphinx-build -b html docs/source docs/build/html
           # Prevent GitHub Pages/Jekyll from ignoring _static, _sources, etc.
           touch docs/build/html/.nojekyll
