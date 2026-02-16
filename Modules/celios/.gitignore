@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.vscode/
+.DS_Store
+*.egg-info/
+.pytest_cache/
+data/vis_2024/results/all_tissues/
+data/vis_2024/results/Head and Neck/
+data/bashi_2024/results/all_tissues/
+data/bashi_2024/cd-23-0388_table_s1_suppst1.xlsx
+data/oneil_2016/results/cell_lines/
+data/vis_2024/S1_cell_line_drug_info.xlsx
+data/activity_input/rnaseq_tpm_20220624.csv
