@@ -44,6 +44,12 @@ A step-by-step usage tutorial is available in the repository. The pipeline is mo
 
 ---
 
+## Documentation
+
+Full unified documentation is currently under development and will be available at [GitHub Pages](https://druglogics.github.io/trafikk/).
+
+---
+
 ## Synergy quantification
 
 Drug synergy is assessed using **Bliss independence**:
