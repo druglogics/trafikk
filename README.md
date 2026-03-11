@@ -33,7 +33,7 @@ Refer to each module's repository for specific installation instructions and dep
 - [**Gitsbe**](https://github.com/druglogics/gitsbe)
 - [**Drexpa**](https://github.com/druglogics/drexpa)
 - [**Oris**](https://github.com/druglogics/oris)
-- [**Synco**](https://github.com/druglogics/synco)
+- [**Synco**](https://github.com/ViviamSB/SYNCO)
 - [**Siflex**](https://github.com/druglogics/siflex)
 
 ---

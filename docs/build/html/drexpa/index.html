@@ -41,27 +41,28 @@
   
   <link rel="stylesheet" href="../_static/fonts/material-icons.css"/>
   
-  <meta name="theme-color" content="deep_purple">
+  <meta name="theme-color" content="#6c3ec1">
   <script src="../_static/javascripts/modernizr.js"></script>
   
   
   
-    <title>Drexpa &#8212; User Guide</title>
+    <title>Drexpa &#8212; TRAFIKK Docs</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=75810a84" />
     <link rel="stylesheet" type="text/css" href="../_static/material.css?v=79c92029" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=a63a957e" />
     <script src="../_static/documentation_options.js?v=2709fde1"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Oris" href="../oris/index.html" />
-    <link rel="prev" title="Gitsbe" href="../gitsbe/index.html" />
+    <link rel="next" title="Installation" href="installation.html" />
+    <link rel="prev" title="Usage" href="../gitsbe/usage.html" />
   
    
 
   </head>
   <body dir=ltr
-        data-md-color-primary=deep_purple data-md-color-accent=red>
+        data-md-color-primary=deep-purple data-md-color-accent=pink>
   
   <svg class="md-svg">
     <defs data-children-count="0">
@@ -79,7 +80,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex navheader">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../index.html" title="User Guide"
+        <a href="../index.html" title="TRAFIKK Docs"
            class="md-header-nav__button md-logo">
           
             <i class="md-icon">&#xe865</i>
@@ -91,7 +92,7 @@
       </div>
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-          <span class="md-header-nav__topic">TRAFIKK Pipeline Documentation</span>
+          <span class="md-header-nav__topic">TRAFIKK</span>
           <span class="md-header-nav__topic"> Drexpa </span>
         </div>
       </div>
@@ -125,6 +126,23 @@
 
       </div>
       
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            <a href="https://github.com/druglogics/trafikk" title="Go to repository" class="md-source" data-md-source="github">
+
+    <div class="md-source__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="28" height="28">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    trafikk
+  </div>
+</a>
+          </div>
+        </div>
+      
       
   
   <script src="../_static/javascripts/version_dropdown.js"></script>
@@ -148,7 +166,7 @@
   <nav class="md-tabs" data-md-component="tabs">
     <div class="md-tabs__inner md-grid">
       <ul class="md-tabs__list">
-          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">User Guide</a></li>
+          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">TRAFIKK Docs</a></li>
       </ul>
     </div>
   </nav>
@@ -160,14 +178,29 @@
               <div class="md-sidebar__inner">
                 <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="../index.html" title="User Guide" class="md-nav__button md-logo">
+    <a href="../index.html" title="TRAFIKK Docs" class="md-nav__button md-logo">
       
         <i class="md-icon">&#xe865</i>
       
     </a>
     <a href="../index.html"
-       title="User Guide">TRAFIKK Pipeline Documentation</a>
+       title="TRAFIKK Docs">TRAFIKK</a>
   </label>
+    <div class="md-nav__source">
+      <a href="https://github.com/druglogics/trafikk" title="Go to repository" class="md-source" data-md-source="github">
+
+    <div class="md-source__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="28" height="28">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    trafikk
+  </div>
+</a>
+    </div>
+  
   
 
   
@@ -203,13 +236,85 @@
       
         
 <nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">"Contents"</label>
   <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#drexpa-index--page-root" class="md-nav__link">Drexpa</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#pipeline-overview" class="md-nav__link">Pipeline overview</a>
+        </li>
+        <li class="md-nav__item"><a href="#pipeline-modes" class="md-nav__link">Pipeline modes</a>
+        </li></ul>
+            </nav>
+        </li>
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="../_sources/drexpa/index.rst.txt">Show Source</a> </li>
+
+  </ul>
+</nav>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="#pipeline-overview" class="md-nav__link">Pipeline overview</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#pipeline-modes" class="md-nav__link">Pipeline modes</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <label class="md-nav__link md-nav__link--active" for="__toc"> Overview </label>
+    
+      <a href="#" class="md-nav__link md-nav__link--active">Overview</a>
+      
+        
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">"Contents"</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#drexpa-index--page-root" class="md-nav__link">Drexpa</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#pipeline-overview" class="md-nav__link">Pipeline overview</a>
+        </li>
+        <li class="md-nav__item"><a href="#pipeline-modes" class="md-nav__link">Pipeline modes</a>
+        </li></ul>
+            </nav>
+        </li>
     
 <li class="md-nav__item"><a class="md-nav__extra_link" href="../_sources/drexpa/index.rst.txt">Show Source</a> </li>
 
   </ul>
 </nav>
       
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="installation.html" class="md-nav__link">Installation</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="usage.html" class="md-nav__link">Usage</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="configuration.html" class="md-nav__link">Configuration</a>
+      
+    
+    </li></ul>
+    
+    </li></ul>
     
     </li>
     <li class="md-nav__item">
@@ -245,7 +350,16 @@
               <div class="md-sidebar__inner">
                 
 <nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">"Contents"</label>
   <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#drexpa-index--page-root" class="md-nav__link">Drexpa</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#pipeline-overview" class="md-nav__link">Pipeline overview</a>
+        </li>
+        <li class="md-nav__item"><a href="#pipeline-modes" class="md-nav__link">Pipeline modes</a>
+        </li></ul>
+            </nav>
+        </li>
     
 <li class="md-nav__item"><a class="md-nav__extra_link" href="../_sources/drexpa/index.rst.txt">Show Source</a> </li>
 
@@ -262,7 +376,38 @@
             
   <section id="drexpa">
 <span id="drexpa-home"></span><h1 id="drexpa-index--page-root">Drexpa<a class="headerlink" href="#drexpa-index--page-root" title="Link to this heading">¶</a></h1>
-<p>Sample text</p>
+<p><strong>Drexpa</strong> — <em>DRug EXperimental PAnel</em> — transforms experimental drug screening datasets into <em>in silico</em> drug panels and perturbations that can be tested in Boolean models using the TRAFIKK pipeline. It automates drug name resolution, target retrieval, node mapping, and creates drug panels and perturbation files compatible with <em>in silico</em> validation workflows.</p>
+<section id="pipeline-overview">
+<h2 id="pipeline-overview">Pipeline overview<a class="headerlink" href="#pipeline-overview" title="Link to this heading">¶</a></h2>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Drug Names (TXT)
+  ↓ [chembl_ids]
+ChEMBL IDs
+  ↓ [targets]
+Drug Targets (from internal DB)
+  ↓ [node_targets] + Node Dict (CSV)
+Logical Model Nodes
+  ↓ [profiles]
+Drug Profiles (with Pipeline IDs)
+  ├→ [panel] → Drug Panel (DrugLogics format)
+  └→ [combinations] + Synergy Data (CSV, optional)
+     ↓ [perturbations]
+     Perturbation Files (per tissue/cell line)
+     ↓ [synergies]
+     Synergy Summaries
+</pre></div>
+</div>
+</section>
+<section id="pipeline-modes">
+<h2 id="pipeline-modes">Pipeline modes<a class="headerlink" href="#pipeline-modes" title="Link to this heading">¶</a></h2>
+<p>Drexpa automatically adapts to three execution modes:</p>
+<ol class="arabic simple">
+<li><p><strong>No Synergy Data</strong>: Generates drug profiles and panel; skips doses/combinations/synergies.</p></li>
+<li><p><strong>With Concentration Data</strong>: Full pipeline including dose-based target extraction and combinations.</p></li>
+<li><p><strong>Without Concentration Data</strong>: Profiles and panel from single-dose targets; combinations from profile mapping.</p></li>
+</ol>
+<div class="toctree-wrapper compound">
+</div>
+</section>
 </section>
 
 
@@ -275,7 +420,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../gitsbe/index.html" title="Gitsbe"
+            <a href="../gitsbe/usage.html" title="Usage"
                class="md-flex md-footer-nav__link md-footer-nav__link--prev"
                rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
@@ -284,17 +429,17 @@
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span
-                      class="md-footer-nav__direction"> "Previous" </span> Gitsbe </span>
+                      class="md-footer-nav__direction"> "Previous" </span> Usage </span>
               </div>
             </a>
           
           
-            <a href="../oris/index.html" title="Oris"
+            <a href="installation.html" title="Installation"
                class="md-flex md-footer-nav__link md-footer-nav__link--next"
                rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
                 class="md-flex__ellipsis"> <span
-                class="md-footer-nav__direction"> "Next" </span> Oris </span>
+                class="md-footer-nav__direction"> "Next" </span> Installation </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink"><i
                 class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>

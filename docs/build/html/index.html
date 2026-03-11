@@ -41,14 +41,15 @@
   
   <link rel="stylesheet" href="_static/fonts/material-icons.css"/>
   
-  <meta name="theme-color" content="deep_purple">
+  <meta name="theme-color" content="#6c3ec1">
   <script src="_static/javascripts/modernizr.js"></script>
   
   
   
-    <title>TRAFIKK Pipeline Documentation &#8212; User Guide</title>
+    <title>TRAFIKK Pipeline &#8212; TRAFIKK Docs</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=75810a84" />
     <link rel="stylesheet" type="text/css" href="_static/material.css?v=79c92029" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=42e87bff" />
     <script src="_static/documentation_options.js?v=2709fde1"></script>
     <script src="_static/doctools.js?v=9bcbadda"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
@@ -60,7 +61,7 @@
 
   </head>
   <body dir=ltr
-        data-md-color-primary=deep_purple data-md-color-accent=red>
+        data-md-color-primary=deep-purple data-md-color-accent=pink>
   
   <svg class="md-svg">
     <defs data-children-count="0">
@@ -78,7 +79,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex navheader">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="#" title="User Guide"
+        <a href="#" title="TRAFIKK Docs"
            class="md-header-nav__button md-logo">
           
             <i class="md-icon">&#xe865</i>
@@ -90,8 +91,8 @@
       </div>
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-          <span class="md-header-nav__topic">TRAFIKK Pipeline Documentation</span>
-          <span class="md-header-nav__topic"> TRAFIKK Pipeline Documentation </span>
+          <span class="md-header-nav__topic">TRAFIKK</span>
+          <span class="md-header-nav__topic"> TRAFIKK Pipeline </span>
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
@@ -124,6 +125,23 @@
 
       </div>
       
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            <a href="https://github.com/druglogics/trafikk" title="Go to repository" class="md-source" data-md-source="github">
+
+    <div class="md-source__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="28" height="28">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    trafikk
+  </div>
+</a>
+          </div>
+        </div>
+      
       
   
   <script src="_static/javascripts/version_dropdown.js"></script>
@@ -142,12 +160,19 @@
   
   <div class="md-container">
     
+
+<div class="md-hero" data-md-component="hero">
+  <div class="md-hero__inner md-grid">
+    <p>Systematic prediction and mechanistic interpretation of anticancer drug synergies</p>
+  </div>
+</div>
+
     
     
   <nav class="md-tabs" data-md-component="tabs">
     <div class="md-tabs__inner md-grid">
       <ul class="md-tabs__list">
-          <li class="md-tabs__item"><a href="#" class="md-tabs__link">User Guide</a></li>
+          <li class="md-tabs__item"><a href="#" class="md-tabs__link">TRAFIKK Docs</a></li>
       </ul>
     </div>
   </nav>
@@ -159,14 +184,29 @@
               <div class="md-sidebar__inner">
                 <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="#" title="User Guide" class="md-nav__button md-logo">
+    <a href="#" title="TRAFIKK Docs" class="md-nav__button md-logo">
       
         <i class="md-icon">&#xe865</i>
       
     </a>
     <a href="#"
-       title="User Guide">TRAFIKK Pipeline Documentation</a>
+       title="TRAFIKK Docs">TRAFIKK</a>
   </label>
+    <div class="md-nav__source">
+      <a href="https://github.com/druglogics/trafikk" title="Go to repository" class="md-source" data-md-source="github">
+
+    <div class="md-source__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="28" height="28">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    trafikk
+  </div>
+</a>
+    </div>
+  
   
 
   
@@ -259,11 +299,61 @@
         <div class="md-content">
           <article class="md-content__inner md-typeset" role="main">
             
-  <section id="trafikk-pipeline-documentation">
-<h1 id="index--page-root">TRAFIKK Pipeline Documentation<a class="headerlink" href="#index--page-root" title="Link to this heading">¶</a></h1>
-<p>Welcome to the TRAFIKK Pipeline documentation.</p>
-<p>This guide will cover all modules of the TRAFIKK pipeline.</p>
-<div class="toctree-wrapper compound">
+  <style>
+/* Hide the auto-generated RST title — the hero replaces it */
+#trafikk-pipeline > h1:first-child { display: none !important; }
+</style><section id="trafikk-pipeline">
+<h1 id="index--page-root">TRAFIKK Pipeline<a class="headerlink" href="#index--page-root" title="Link to this heading">¶</a></h1>
+<div class="hero-section">
+<h1>TRAFIKK</h1>
+<p class="hero-tagline">
+    Systematic prediction and mechanistic interpretation<br/>
+    of anticancer drug synergies
+  </p>
+</div><div class="module-grid">
+<div class="module-card">
+<span class="card-icon">🧬</span>
+<div class="card-title"><a href="celios/index.html">Celios</a></div>
+<p class="card-desc">Integrates cell-line omics data to calibrate the base network to specific biological contexts.</p>
+<span class="card-tag">Omics integration</span>
+</div>
+<div class="module-card">
+<span class="card-icon">🧩</span>
+<div class="card-title"><a href="gitsbe/index.html">Gitsbe</a></div>
+<p class="card-desc">Generates ensembles of logic-based models via genetic-algorithm parameterisation.</p>
+<span class="card-tag">Model ensembles</span>
+</div>
+<div class="module-card">
+<span class="card-icon">💊</span>
+<div class="card-title"><a href="drexpa/index.html">Drexpa</a></div>
+<p class="card-desc">Maps experimental drug panels to <em>in silico</em> perturbation profiles.</p>
+<span class="card-tag">Drug panels</span>
+</div>
+<div class="module-card">
+<span class="card-icon">⚡</span>
+<div class="card-title"><a href="oris/index.html">Oris</a></div>
+<p class="card-desc">Computes viability and synergy scores via signal-propagation analysis.</p>
+<span class="card-tag">Synergy scoring</span>
+</div>
+<div class="module-card">
+<span class="card-icon">📈</span>
+<div class="card-title"><a href="synco/index.html">Synco</a></div>
+<p class="card-desc">Benchmarks predictions against experimental synergy data with classification metrics.</p>
+<span class="card-tag">Benchmarking</span>
+</div>
+<div class="module-card">
+<span class="card-icon">🔎</span>
+<div class="card-title"><a href="siflex/index.html">Siflex</a></div>
+<p class="card-desc">Interactive pathway-level exploration of drug synergy effects on signalling networks.</p>
+<span class="card-tag">Visualisation</span>
+</div>
+</div><div class="citation-box">
+<div class="cite-label">📄 Citation</div>
+  Fariñas M.*, Bermúdez V.*, Tsirvouli E., Lippestad K., Zobolas J., Aittokallio T., Lehti K.†, Flobak Å.†<br/>
+<strong>TRAFIKK: systematic prediction and mechanistic interpretation of anticancer drug synergies.</strong><br/>
+<em>Submitted.</em>
+</div>
+<div class="section-divider"><span>Built with ❤️ at NTNU</span></div><div class="toctree-wrapper compound">
 </div>
 </section>
 

@@ -21,6 +21,8 @@ extensions = [
 
 myst_enable_extensions = [
     "dollarmath",
+    "colon_fence",
+    "html_image",
 ]
 
 templates_path = ['_templates']
@@ -38,18 +40,29 @@ source_suffix = {
 
 html_theme = 'sphinx_material'
 html_static_path = ['_static']
+html_css_files = ['custom.css']
+
 html_theme_options = {
-    'nav_title': 'TRAFIKK Pipeline Documentation',
-    'theme_color': 'deep_purple',
-    'color_primary': 'deep_purple',
-    'color_accent': 'red',
+    'nav_title': 'TRAFIKK',
+    'theme_color': '#6c3ec1',
+    'color_primary': 'deep-purple',
+    'color_accent': 'pink',
     'logo_icon': '&#xe865',
-    'globaltoc_depth': 3,         
+    'globaltoc_depth': 3,
     'globaltoc_includehidden': True,
+    'globaltoc_collapse': True,
+    'heroes': {
+        'index': 'Systematic prediction and mechanistic interpretation of anticancer drug synergies',
+    },
+    'repo_url': 'https://github.com/druglogics/trafikk',
+    'repo_name': 'trafikk',
+    'repo_type': 'github',
+    'master_doc': True,
+    'nav_links': [],
 }
 
 html_sidebars = {
     "**": ["logo-text.html", "globaltoc.html", "localtoc.html", "searchbox.html"],
 }
 
-html_title = "User Guide"
+html_title = "TRAFIKK Docs"

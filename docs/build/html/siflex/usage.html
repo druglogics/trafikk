@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:300,400,400i,700&display=fallback" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="../_static/stylesheets/application.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-palette.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-fixes.css"/>
+  
+  <link rel="stylesheet" href="../_static/fonts/material-icons.css"/>
+  
+  <meta name="theme-color" content="#6c3ec1">
+  <script src="../_static/javascripts/modernizr.js"></script>
+  
+  
+  
+    <title>Usage &#8212; TRAFIKK Docs</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=75810a84" />
+    <link rel="stylesheet" type="text/css" href="../_static/material.css?v=79c92029" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=a63a957e" />
+    <script src="../_static/documentation_options.js?v=2709fde1"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Configuration" href="configuration.html" />
+    <link rel="prev" title="Installation" href="installation.html" />
+  
+   
+
+  </head>
+  <body dir=ltr
+        data-md-color-primary=deep-purple data-md-color-accent=pink>
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#siflex/usage" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../index.html" title="TRAFIKK Docs"
+           class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">&#xe865</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">TRAFIKK</span>
+          <span class="md-header-nav__topic"> Usage </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="../search.html" method="get" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder=""Search""
+             autocapitalize="off" autocomplete="off" spellcheck="false"
+             data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            <a href="https://github.com/druglogics/trafikk" title="Go to repository" class="md-source" data-md-source="github">
+
+    <div class="md-source__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="28" height="28">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    trafikk
+  </div>
+</a>
+          </div>
+        </div>
+      
+      
+  
+  <script src="../_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = "../"versions.json"",
+        target_loc = "../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
+  
+
+    </div>
+  </nav>
+</header>
+
+  
+  <div class="md-container">
+    
+    
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">TRAFIKK Docs</a></li>
+          <li class="md-tabs__item"><a href="index.html" class="md-tabs__link">Siflex</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../index.html" title="TRAFIKK Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon">&#xe865</i>
+      
+    </a>
+    <a href="../index.html"
+       title="TRAFIKK Docs">TRAFIKK</a>
+  </label>
+    <div class="md-nav__source">
+      <a href="https://github.com/druglogics/trafikk" title="Go to repository" class="md-source" data-md-source="github">
+
+    <div class="md-source__icon">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="28" height="28">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    trafikk
+  </div>
+</a>
+    </div>
+  
+  
+
+  
+  <ul class="md-nav__list">
+    <li class="md-nav__item">
+    
+    
+      <a href="../index.html" class="md-nav__link">Home</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../celios/index.html" class="md-nav__link">Celios</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../gitsbe/index.html" class="md-nav__link">Gitsbe</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../drexpa/index.html" class="md-nav__link">Drexpa</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../oris/index.html" class="md-nav__link">Oris</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../synco/index.html" class="md-nav__link">Synco</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="index.html" class="md-nav__link">Siflex</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="index.html#features" class="md-nav__link">Features</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="index.html" class="md-nav__link">Overview</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="installation.html" class="md-nav__link">Installation</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <label class="md-nav__link md-nav__link--active" for="__toc"> Usage </label>
+    
+      <a href="#" class="md-nav__link md-nav__link--active">Usage</a>
+      
+        
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">"Contents"</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#siflex-usage--page-root" class="md-nav__link">Usage</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#quick-start" class="md-nav__link">🚀 Quick start</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#full-pipeline-calculate-scores-explore" class="md-nav__link">▶️ Full pipeline (calculate scores + explore)</a>
+        </li>
+        <li class="md-nav__item"><a href="#calculate-scores-only" class="md-nav__link">📊 Calculate scores only</a>
+        </li>
+        <li class="md-nav__item"><a href="#explore-network-only-skip-calculation" class="md-nav__link">🌐 Explore network only (skip calculation)</a>
+        </li>
+        <li class="md-nav__item"><a href="#explore-pathways-only" class="md-nav__link">🧬 Explore pathways only</a>
+        </li>
+        <li class="md-nav__item"><a href="#run-both-explorers-simultaneously" class="md-nav__link">🔄 Run both explorers simultaneously</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#cli-options" class="md-nav__link">⌨️ CLI options</a>
+        </li>
+        <li class="md-nav__item"><a href="#network-explorer" class="md-nav__link">🖱️ Network explorer</a>
+        </li>
+        <li class="md-nav__item"><a href="#pathway-explorer" class="md-nav__link">🧬 Pathway explorer</a>
+        </li>
+        <li class="md-nav__item"><a href="#python-api" class="md-nav__link">🐍 Python API</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#using-individual-components" class="md-nav__link">🧩 Using individual components</a>
+        </li></ul>
+            </nav>
+        </li></ul>
+            </nav>
+        </li>
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="../_sources/siflex/usage.md.txt">Show Source</a> </li>
+
+  </ul>
+</nav>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="configuration.html" class="md-nav__link">Configuration</a>
+      
+    
+    </li></ul>
+    
+    </li></ul>
+    
+    </li>
+  </ul>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">"Contents"</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#siflex-usage--page-root" class="md-nav__link">Usage</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#quick-start" class="md-nav__link">🚀 Quick start</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#full-pipeline-calculate-scores-explore" class="md-nav__link">▶️ Full pipeline (calculate scores + explore)</a>
+        </li>
+        <li class="md-nav__item"><a href="#calculate-scores-only" class="md-nav__link">📊 Calculate scores only</a>
+        </li>
+        <li class="md-nav__item"><a href="#explore-network-only-skip-calculation" class="md-nav__link">🌐 Explore network only (skip calculation)</a>
+        </li>
+        <li class="md-nav__item"><a href="#explore-pathways-only" class="md-nav__link">🧬 Explore pathways only</a>
+        </li>
+        <li class="md-nav__item"><a href="#run-both-explorers-simultaneously" class="md-nav__link">🔄 Run both explorers simultaneously</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#cli-options" class="md-nav__link">⌨️ CLI options</a>
+        </li>
+        <li class="md-nav__item"><a href="#network-explorer" class="md-nav__link">🖱️ Network explorer</a>
+        </li>
+        <li class="md-nav__item"><a href="#pathway-explorer" class="md-nav__link">🧬 Pathway explorer</a>
+        </li>
+        <li class="md-nav__item"><a href="#python-api" class="md-nav__link">🐍 Python API</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#using-individual-components" class="md-nav__link">🧩 Using individual components</a>
+        </li></ul>
+            </nav>
+        </li></ul>
+            </nav>
+        </li>
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="../_sources/siflex/usage.md.txt">Show Source</a> </li>
+
+<li id="searchbox" class="md-nav__item"></li>
+
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
+  <section class="tex2jax_ignore mathjax_ignore" id="usage">
+<h1 id="siflex-usage--page-root">Usage<a class="headerlink" href="#siflex-usage--page-root" title="Link to this heading">¶</a></h1>
+<section id="quick-start">
+<h2 id="quick-start">🚀 Quick start<a class="headerlink" href="#quick-start" title="Link to this heading">¶</a></h2>
+<section id="full-pipeline-calculate-scores-explore">
+<h3 id="full-pipeline-calculate-scores-explore">▶️ Full pipeline (calculate scores + explore)<a class="headerlink" href="#full-pipeline-calculate-scores-explore" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>siflex.main<span class="w"> </span>config.json
+</pre></div>
+</div>
+</section>
+<section id="calculate-scores-only">
+<h3 id="calculate-scores-only">📊 Calculate scores only<a class="headerlink" href="#calculate-scores-only" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>siflex.main<span class="w"> </span>config.json<span class="w"> </span>--explore<span class="o">=</span>none
+</pre></div>
+</div>
+</section>
+<section id="explore-network-only-skip-calculation">
+<h3 id="explore-network-only-skip-calculation">🌐 Explore network only (skip calculation)<a class="headerlink" href="#explore-network-only-skip-calculation" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>siflex.main<span class="w"> </span>config.json<span class="w"> </span>--no-calculate<span class="w"> </span>--explore<span class="o">=</span>network
+</pre></div>
+</div>
+</section>
+<section id="explore-pathways-only">
+<h3 id="explore-pathways-only">🧬 Explore pathways only<a class="headerlink" href="#explore-pathways-only" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>siflex.main<span class="w"> </span>config.json<span class="w"> </span>--no-calculate<span class="w"> </span>--explore<span class="o">=</span>pathways
+</pre></div>
+</div>
+</section>
+<section id="run-both-explorers-simultaneously">
+<h3 id="run-both-explorers-simultaneously">🔄 Run both explorers simultaneously<a class="headerlink" href="#run-both-explorers-simultaneously" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>siflex.main<span class="w"> </span>config.json<span class="w"> </span>--no-calculate<span class="w"> </span>--explore<span class="o">=</span>all
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Network explorer: <code class="docutils literal notranslate"><span class="pre">http://localhost:8050</span></code></p></li>
+<li><p>Pathway explorer: <code class="docutils literal notranslate"><span class="pre">http://localhost:8051</span></code></p></li>
+</ul>
+</section>
+</section>
+<section id="cli-options">
+<h2 id="cli-options">⌨️ CLI options<a class="headerlink" href="#cli-options" title="Link to this heading">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">siflex</span><span class="o">.</span><span class="n">main</span> <span class="o">&lt;</span><span class="n">config_path</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span>
+
+<span class="n">Required</span><span class="p">:</span>
+  <span class="n">config_path</span>              <span class="n">Path</span> <span class="n">to</span> <span class="n">configuration</span> <span class="n">JSON</span> <span class="n">file</span>
+
+<span class="n">Options</span><span class="p">:</span>
+  <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">calculate</span>          <span class="n">Skip</span> <span class="n">score</span> <span class="n">calculation</span> <span class="p">(</span><span class="n">use</span> <span class="n">existing</span> <span class="n">results</span><span class="p">)</span>
+  <span class="o">--</span><span class="n">explore</span><span class="o">=&lt;</span><span class="n">mode</span><span class="o">&gt;</span>        <span class="n">Exploration</span> <span class="n">mode</span><span class="p">:</span> <span class="n">network</span><span class="p">,</span> <span class="n">pathways</span><span class="p">,</span> <span class="nb">all</span><span class="p">,</span> <span class="ow">or</span> <span class="n">none</span>
+                          <span class="p">(</span><span class="n">default</span><span class="p">:</span> <span class="nb">all</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="network-explorer">
+<h2 id="network-explorer">🖱️ Network explorer<a class="headerlink" href="#network-explorer" title="Link to this heading">¶</a></h2>
+<p>The network explorer provides three independent visualisation panels for comparing signalling networks across different conditions:</p>
+<ul class="simple">
+<li><p><strong>Tissue Selection</strong>: Choose from 26+ cancer tissue types</p></li>
+<li><p><strong>Cell Line Filtering</strong>: Filter by specific cell lines within tissues</p></li>
+<li><p><strong>Condition Comparison</strong>: Compare drug responses across experimental conditions</p></li>
+<li><p><strong>Pathway Highlighting</strong>: Overlay KEGG pathway membership with pie chart visualisations</p></li>
+<li><p><strong>Interactive Network</strong>: Pan, zoom, and hover over nodes to see synergy scores</p></li>
+</ul>
+</section>
+<section id="pathway-explorer">
+<h2 id="pathway-explorer">🧬 Pathway explorer<a class="headerlink" href="#pathway-explorer" title="Link to this heading">¶</a></h2>
+<p>The pathway explorer offers two side-by-side panels for comparing pathway impacts:</p>
+<ul class="simple">
+<li><p><strong>Drug Combination Selection</strong>: Choose two drugs to analyse</p></li>
+<li><p><strong>Aggregation Methods</strong>: mean, median for node score aggregation</p></li>
+<li><p><strong>Pathway Ranking</strong>: Automatically sort by impact score</p></li>
+<li><p><strong>Flip Analysis</strong>: Identify pathways with opposite responses (synergistic effects)</p></li>
+<li><p><strong>Interactive Plots</strong>: Hover to see detailed pathway information</p></li>
+</ul>
+</section>
+<section id="python-api">
+<h2 id="python-api">🐍 Python API<a class="headerlink" href="#python-api" title="Link to this heading">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">siflex.main</span><span class="w"> </span><span class="kn">import</span> <span class="n">run_siflex</span><span class="p">,</span> <span class="n">build_config</span>
+
+<span class="c1"># Load configuration</span>
+<span class="n">config</span> <span class="o">=</span> <span class="n">build_config</span><span class="p">(</span><span class="s2">"config.json"</span><span class="p">)</span>
+
+<span class="c1"># Run with custom options</span>
+<span class="n">run_siflex</span><span class="p">(</span>
+    <span class="n">config</span><span class="p">,</span>
+    <span class="n">config_path</span><span class="o">=</span><span class="s2">"config.json"</span><span class="p">,</span>
+    <span class="n">calculate</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">explore</span><span class="o">=</span><span class="s2">"all"</span><span class="p">,</span>
+    <span class="n">run_server</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<section id="using-individual-components">
+<h3 id="using-individual-components">🧩 Using individual components<a class="headerlink" href="#using-individual-components" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">siflex.apps</span><span class="w"> </span><span class="kn">import</span> <span class="n">prepare_network_data</span><span class="p">,</span> <span class="n">run_network_dash</span>
+
+<span class="c1"># Prepare network data</span>
+<span class="n">nodes</span><span class="p">,</span> <span class="n">edges</span><span class="p">,</span> <span class="n">node_pathway_index</span><span class="p">,</span> <span class="n">PATHWAY_CATALOG</span><span class="p">,</span> <span class="n">NODE_TO_PATHS</span><span class="p">,</span> \
+    <span class="n">TISSUE_OPTIONS</span><span class="p">,</span> <span class="n">CELL_LINES_BY_TISSUE</span><span class="p">,</span> <span class="n">conditions</span><span class="p">,</span> <span class="n">COND_LABELS</span><span class="p">,</span> \
+    <span class="n">node_scores_agg</span> <span class="o">=</span> <span class="n">prepare_network_data</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="s2">"config.json"</span><span class="p">)</span>
+
+<span class="c1"># Run dashboard on custom port</span>
+<span class="n">run_network_dash</span><span class="p">(</span>
+    <span class="n">nodes</span><span class="p">,</span> <span class="n">edges</span><span class="p">,</span> <span class="n">node_pathway_index</span><span class="p">,</span> <span class="n">PATHWAY_CATALOG</span><span class="p">,</span> <span class="n">NODE_TO_PATHS</span><span class="p">,</span>
+    <span class="n">TISSUE_OPTIONS</span><span class="p">,</span> <span class="n">CELL_LINES_BY_TISSUE</span><span class="p">,</span> <span class="n">conditions</span><span class="p">,</span> <span class="n">COND_LABELS</span><span class="p">,</span>
+    <span class="n">node_scores_agg</span><span class="p">,</span>
+    <span class="n">run_server</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="mi">8080</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="installation.html" title="Installation"
+               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+               rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span
+                      class="md-footer-nav__direction"> "Previous" </span> Installation </span>
+              </div>
+            </a>
+          
+          
+            <a href="configuration.html" title="Configuration"
+               class="md-flex md-footer-nav__link md-footer-nav__link--next"
+               rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
+                class="md-flex__ellipsis"> <span
+                class="md-footer-nav__direction"> "Next" </span> Configuration </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink"><i
+                class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div class="md-footer-copyright__highlight">
+              &#169; Copyright 2026, Marco Fariñas and Viviam Bermúdez.
+              
+          </div>
+            Created using
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+             and
+            <a href="https://github.com/bashtage/sphinx-material/">Material for
+              Sphinx</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../_static/javascripts/application.js"></script>
+  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
+  </body>
+</html>
