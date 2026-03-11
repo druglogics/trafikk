@@ -13,7 +13,7 @@ This guide will cover all modules of the TRAFIKK pipeline.
    celios/index
    gitsbe/index
    drexpa/index
-   bless/index
+   oris/index
    synco/index
    siflex/index
 

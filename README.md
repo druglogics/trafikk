@@ -1,4 +1,3 @@
-
 # TRAFIKK
 
 **Systematic prediction and mechanistic interpretation of anticancer drug synergies**
@@ -13,14 +12,14 @@ Trafikk simulates drug perturbations on cell-line-calibrated Boolean models of c
 
 ### Pipeline modules
 
-| Module | Description |
-|--------|-------------|
-| **Celios** | Integrates cell-line omics data (mutations, CNV, TF activity) to calibrate the base network to specific biological contexts. |
-| **Gitsbe** | Generates ensembles of logic-based models for each calibrated cell-line network. |
-| **Drexpa** | Maps experimental drug panels to *in silico* perturbation profiles using public target databases (GDSC, OpenTargets, ChEMBL, UniProt, BindingDB). |
-| **Oris** | Computes *in silico* viability and synergy scores via signal-propagation analysis (built on [BooLEVARD](https://github.com/druglogics/boulevard)). |
-| **Synco** | Benchmarks predictions against experimental synergy data using standard classification metrics (AUC-ROC, AUC-PR, F1, accuracy, recall, precision). |
-| **Siflex** | Performs pathway-level functional analysis of drug effects and generates mechanistic hypotheses for synergistic responses. |
+| Module           | Description                                                                                                                                        |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Celios** | Integrates cell-line omics data (mutations, CNV, TF activity) to calibrate the base network to specific biological contexts.                       |
+| **Gitsbe** | Generates ensembles of logic-based models for each calibrated cell-line network.                                                                   |
+| **Drexpa** | Maps experimental drug panels to*in silico* perturbation profiles using public target databases (GDSC, OpenTargets, ChEMBL, UniProt, BindingDB). |
+| **Oris**   | Computes*in silico* viability and synergy scores via signal-propagation analysis (built on [BooLEVARD](https://github.com/druglogics/boulevard)).   |
+| **Synco**  | Benchmarks predictions against experimental synergy data using standard classification metrics (AUC-ROC, AUC-PR, F1, accuracy, recall, precision). |
+| **Siflex** | Performs pathway-level functional analysis of drug effects and generates mechanistic hypotheses for synergistic responses.                         |
 
 ![Pipeline overview](figures/pipeline_overview.png)
 
@@ -49,7 +48,9 @@ A step-by-step usage tutorial is available in the repository. The pipeline is mo
 
 Drug synergy is assessed using **Bliss independence**:
 
-$$\Delta_{\text{Bliss}} = V_{AB} - V_A \cdot V_B$$
+$$
+\Delta_{\text{Bliss}} = V_{AB} - V_A \cdot V_B
+$$
 
 where $V_{AB}$ is the viability under combined perturbation and $V_A$, $V_B$ are the single-drug viabilities. Negative values indicate synergy.
 
@@ -64,12 +65,12 @@ where $V_{AB}$ is the viability under combined perturbation and $V_A$, $V_B$ are
 
 ## Citation
 
-> Fariñas M.\*, Bermúdez V.\*, Tsirvouli E., Lippestad K., Zobolas J., Aittokallio T., Lehti K.†, Flobak Å.†  
-> **TRAFIKK: systematic prediction and mechanistic interpretation of anticancer drug synergies.**  
+> Fariñas M.\*, Bermúdez V.\*, Tsirvouli E., Lippestad K., Zobolas J., Aittokallio T., Lehti K.†, Flobak Å.†
+> **TRAFIKK: systematic prediction and mechanistic interpretation of anticancer drug synergies.**
 > *Submitted.*
 
 ---
 
 ## License
 
-See the [repository](https://github.com/druglogics/trafikk) for license details.
+This project is licensed under the [GNU General Public License v3.0](LICENSE).

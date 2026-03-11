@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oris"
+version = "0.1.0"
+description = "ORIS command-line tools"
+requires-python = ">=3.10"
+authors = [
+  { name = "Marco Fariñas" }
+]
+dependencies = [
+  "pandas",
+  "numpy",
+  "mpi4py",
+  "toml"
+]
+
+[project.scripts]
+oris = "oris.oris_cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"oris" = ["config.toml"]
