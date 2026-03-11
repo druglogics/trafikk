@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="lang:clipboard.copy" content="Copy to clipboard">
+  <meta name="lang:clipboard.copied" content="Copied to clipboard">
+  <meta name="lang:search.language" content="en">
+  <meta name="lang:search.pipeline.stopwords" content="True">
+  <meta name="lang:search.pipeline.trimmer" content="True">
+  <meta name="lang:search.result.none" content="No matching documents">
+  <meta name="lang:search.result.one" content="1 matching document">
+  <meta name="lang:search.result.other" content="# matching documents">
+  <meta name="lang:search.tokenizer" content="[\s\-]+">
+
+  
+    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700|Roboto:300,400,400i,700&display=fallback" rel="stylesheet">
+
+    <style>
+      body,
+      input {
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+        font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+    </style>
+  
+
+  <link rel="stylesheet" href="../_static/stylesheets/application.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-palette.css"/>
+  <link rel="stylesheet" href="../_static/stylesheets/application-fixes.css"/>
+  
+  <link rel="stylesheet" href="../_static/fonts/material-icons.css"/>
+  
+  <meta name="theme-color" content="deep_purple">
+  <script src="../_static/javascripts/modernizr.js"></script>
+  
+  
+  
+    <title>Oris Modes &#8212; User Guide</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=75810a84" />
+    <link rel="stylesheet" type="text/css" href="../_static/material.css?v=79c92029" />
+    <script src="../_static/documentation_options.js?v=2709fde1"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Configuration" href="configuration.html" />
+    <link rel="prev" title="Sampling" href="sampling.html" />
+  
+   
+
+  </head>
+  <body dir=ltr
+        data-md-color-primary=deep_purple data-md-color-accent=red>
+  
+  <svg class="md-svg">
+    <defs data-children-count="0">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+      
+    </defs>
+  </svg>
+  
+  <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer">
+  <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search">
+  <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+  <a href="#oris/orismodes" tabindex="1" class="md-skip"> Skip to content </a>
+  <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex navheader">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../index.html" title="User Guide"
+           class="md-header-nav__button md-logo">
+          
+            <i class="md-icon">&#xe865</i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          <span class="md-header-nav__topic">TRAFIKK Pipeline Documentation</span>
+          <span class="md-header-nav__topic"> Oris Modes </span>
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+        
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" action="../search.html" method="get" name="search">
+      <input type="text" class="md-search__input" name="q" placeholder=""Search""
+             autocapitalize="off" autocomplete="off" spellcheck="false"
+             data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+      
+  
+  <script src="../_static/javascripts/version_dropdown.js"></script>
+  <script>
+    var json_loc = "../"versions.json"",
+        target_loc = "../../",
+        text = "Versions";
+    $( document ).ready( add_version_dropdown(json_loc, target_loc, text));
+  </script>
+  
+
+    </div>
+  </nav>
+</header>
+
+  
+  <div class="md-container">
+    
+    
+    
+  <nav class="md-tabs" data-md-component="tabs">
+    <div class="md-tabs__inner md-grid">
+      <ul class="md-tabs__list">
+          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">User Guide</a></li>
+          <li class="md-tabs__item"><a href="index.html" class="md-tabs__link">Oris</a></li>
+      </ul>
+    </div>
+  </nav>
+    <main class="md-main">
+      <div class="md-main__inner md-grid" data-md-component="container">
+        
+          <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../index.html" title="User Guide" class="md-nav__button md-logo">
+      
+        <i class="md-icon">&#xe865</i>
+      
+    </a>
+    <a href="../index.html"
+       title="User Guide">TRAFIKK Pipeline Documentation</a>
+  </label>
+  
+
+  
+  <ul class="md-nav__list">
+    <li class="md-nav__item">
+    
+    
+      <a href="../index.html" class="md-nav__link">Home</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../celios/index.html" class="md-nav__link">Celios</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../gitsbe/index.html" class="md-nav__link">Gitsbe</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../drexpa/index.html" class="md-nav__link">Drexpa</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="index.html" class="md-nav__link">Oris</a>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="index.html" class="md-nav__link">Overview</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="helpers.html" class="md-nav__link">Helpers</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="installation.html" class="md-nav__link">Installation and Usage</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="initialconditions.html" class="md-nav__link">Initial Conditions</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="sampling.html" class="md-nav__link">Sampling</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <label class="md-nav__link md-nav__link--active" for="__toc"> Modes </label>
+    
+      <a href="#" class="md-nav__link md-nav__link--active">Modes</a>
+      
+        
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">"Contents"</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#oris-orismodes--page-root" class="md-nav__link">Oris Modes</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#synergy-mode" class="md-nav__link">1. Synergy Mode</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#bliss-synergy-scoring" class="md-nav__link">Bliss Synergy Scoring</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#count-paths-mode" class="md-nav__link">2. Count Paths Mode</a>
+        </li>
+        <li class="md-nav__item"><a href="#full-mode" class="md-nav__link">3. Full Mode</a>
+        </li></ul>
+            </nav>
+        </li>
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="../_sources/oris/orismodes.md.txt">Show Source</a> </li>
+
+  </ul>
+</nav>
+      <ul class="md-nav__list"> 
+    <li class="md-nav__item">
+    
+    
+      <a href="#synergy-mode" class="md-nav__link">1. Synergy Mode</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#count-paths-mode" class="md-nav__link">2. Count Paths Mode</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="#full-mode" class="md-nav__link">3. Full Mode</a>
+      
+    
+    </li></ul>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="configuration.html" class="md-nav__link">Configuration</a>
+      
+    
+    </li></ul>
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../synco/index.html" class="md-nav__link">Synco</a>
+      
+    
+    </li>
+    <li class="md-nav__item">
+    
+    
+      <a href="../siflex/index.html" class="md-nav__link">Siflex</a>
+      
+    
+    </li>
+  </ul>
+  
+
+</nav>
+              </div>
+            </div>
+          </div>
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                
+<nav class="md-nav md-nav--secondary">
+    <label class="md-nav__title" for="__toc">"Contents"</label>
+  <ul class="md-nav__list" data-md-scrollfix="">
+        <li class="md-nav__item"><a href="#oris-orismodes--page-root" class="md-nav__link">Oris Modes</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#synergy-mode" class="md-nav__link">1. Synergy Mode</a><nav class="md-nav">
+              <ul class="md-nav__list">
+        <li class="md-nav__item"><a href="#bliss-synergy-scoring" class="md-nav__link">Bliss Synergy Scoring</a>
+        </li></ul>
+            </nav>
+        </li>
+        <li class="md-nav__item"><a href="#count-paths-mode" class="md-nav__link">2. Count Paths Mode</a>
+        </li>
+        <li class="md-nav__item"><a href="#full-mode" class="md-nav__link">3. Full Mode</a>
+        </li></ul>
+            </nav>
+        </li>
+    
+<li class="md-nav__item"><a class="md-nav__extra_link" href="../_sources/oris/orismodes.md.txt">Show Source</a> </li>
+
+<li id="searchbox" class="md-nav__item"></li>
+
+  </ul>
+</nav>
+              </div>
+            </div>
+          </div>
+        
+        <div class="md-content">
+          <article class="md-content__inner md-typeset" role="main">
+            
+  <section class="tex2jax_ignore mathjax_ignore" id="oris-modes">
+<h1 id="oris-orismodes--page-root">Oris Modes<a class="headerlink" href="#oris-orismodes--page-root" title="Link to this heading">¶</a></h1>
+<p>Oris can operate in three distinct modes, selectable via the <code class="docutils literal notranslate"><span class="pre">--mode</span></code> parameter:</p>
+<ol class="arabic simple">
+<li><p><strong>Synergy Mode</strong></p></li>
+<li><p><strong>Count Paths Mode</strong></p></li>
+<li><p><strong>Full Mode</strong></p></li>
+</ol>
+<hr class="docutils"/>
+<section id="synergy-mode">
+<h2 id="synergy-mode">1. Synergy Mode<a class="headerlink" href="#synergy-mode" title="Link to this heading">¶</a></h2>
+<p>The <strong>Synergy Mode</strong> is invoked with <code class="docutils literal notranslate"><span class="pre">--mode</span> <span class="pre">synergy</span> </code>and is used to compute <strong>Bliss synergy excess</strong> for pairs of perturbations, mimicking double-drug treatments.</p>
+<p>To perform these computations, Oris relies on several directories and files obtained within the input ZIP archive.</p>
+<ul class="simple">
+<li><p>📁 <strong><a class="reference internal" href="../gitsbe/index.html#gitsbe-home"><span class="std std-ref">Gitsbe</span></a>-generated model ensemble</strong></p>
+<ul>
+<li><p>Full ensemble (if no sampling): <code class="docutils literal notranslate"><span class="pre">src/Models</span></code></p></li>
+<li><p>Sampled ensemble (if sampling enabled): <code class="docutils literal notranslate"><span class="pre">src/SampledModels</span></code></p></li>
+</ul>
+</li>
+<li><p>📃 <strong>Calibration data:</strong> <code class="docutils literal notranslate"><span class="pre">src/training</span></code></p></li>
+<li><p>📃 <strong><a class="reference internal" href="../drexpa/index.html#drexpa-home"><span class="std std-ref">Drexpa</span></a>-generated perturbations:</strong> <code class="docutils literal notranslate"><span class="pre">src/perturbations</span></code></p></li>
+<li><p><strong>📃 <a class="reference internal" href="../drexpa/index.html#drexpa-home"><span class="std std-ref">Drexpa</span></a>-generated drugpanel:</strong> <code class="docutils literal notranslate"><span class="pre">src/drugpanel</span></code></p></li>
+<li><p>📃 <strong>Model outputs:</strong> <code class="docutils literal notranslate"><span class="pre">src/modeloutputs</span></code></p></li>
+</ul>
+<p>The simulation begins by applying <strong>initial conditions</strong> (see <a class="reference internal" href="initialconditions.html"><span class="std std-doc"><em>Initial Conditions</em></span></a>), which constrain the models according to the culture medium and filter stable states that comply with the input-node assignments present in the calibration data.</p>
+<p>Next, models undergo <strong>sampling</strong>, selecting only those that complete simulations within the user-defined performance threshold (as configured via the <code class="docutils literal notranslate"><span class="pre">--sampling</span></code> parameter). Once the sampled ensemble is established, Oris reads the perturbation file to generate the perturbed models using <a class="reference external" href="https://github.com/farinasm/boolevard">BooLEVARD</a>’s <code class="docutils literal notranslate"><span class="pre">Pert</span></code> method. For each defined double perturbation, Oris creates:</p>
+<ul class="simple">
+<li><p>the <strong>double-perturbed model</strong>, and</p></li>
+<li><p>the corresponding <strong>single-perturbed models</strong>, whenever one perturbation in the pair appears in at least one double combination.</p></li>
+</ul>
+<p>After assembling the collection of <strong>unperturbed</strong>, <strong>single-perturbed</strong>, and <strong>double-perturbed</strong> models, Oris executes BooLEVARD’s <code class="docutils literal notranslate"><span class="pre">CountPaths</span></code> method on all of them to quantify signal transduction toward the nodes listed in the <strong>model outputs file</strong>, and using the information in the <code class="docutils literal notranslate"><span class="pre">perturbations</span></code> and <code class="docutils literal notranslate"><span class="pre">drugpanel</span></code> files.</p>
+<blockquote>
+<div><p>📝 Nodes in the model output file serve as proxies for cell viability.</p>
+</div></blockquote>
+<p>After simulation, the path-counting results are stored in <code class="docutils literal notranslate"><span class="pre">Results/PathCounts.txt</span></code> inside the analyzed ZIP file. This file is formatted as a dataframe, where each row corresponds to a stable state of a model instance. For each entry, Oris reports:</p>
+<ul class="simple">
+<li><p>the model identifier (model name + perturbation label),</p></li>
+<li><p>the stable state evaluated,</p></li>
+<li><p>the path counts for all model-output nodes, and</p></li>
+<li><p>the local Boolean states of those output nodes.</p></li>
+</ul>
+<section id="bliss-synergy-scoring">
+<h3 id="bliss-synergy-scoring">Bliss Synergy Scoring<a class="headerlink" href="#bliss-synergy-scoring" title="Link to this heading">¶</a></h3>
+<p>The final stage consists of computing Bliss synergy scores. To enable this, a <strong>viability score</strong> is first derived from the path counts via a hyperbolic tangent transformation that maps values to the interval <span class="math notranslate nohighlight">\([0, 1]\)</span>. Specifically, viability is defined as:</p>
+<div class="math notranslate nohighlight">
+\[
+V = \frac{1}{2} \left[ \tanh\!\left( \frac{\sum_{i \in P} p_i - \sum_{j \in N} p_j}{s} \right) + 1 \right]
+\]</div>
+<p>where:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(P\)</span> is the set of pro-survival nodes,</p></li>
+<li><p><span class="math notranslate nohighlight">\(N\)</span> is the set of pro-death nodes,</p></li>
+<li><p><span class="math notranslate nohighlight">\(p_i\)</span> and <span class="math notranslate nohighlight">\(p_j\)</span> denote their respective path counts, and</p></li>
+<li><p><span class="math notranslate nohighlight">\(s\)</span> is a scaling parameter that controls the compression of viability scores.</p></li>
+</ul>
+<p>In practice, the parameter <span class="math notranslate nohighlight">\(s\)</span> is chosen to maximize the dispersion of the viability scores, ensuring an effective spread across the <span class="math notranslate nohighlight">\([0, 1]\)</span> interval. Viability values are then capped at the corresponding unperturbed condition and normalized by it, ensuring that the unperturbed condition attains a value of <span class="math notranslate nohighlight">\(V = 1\)</span>.</p>
+<p>Finally, Bliss synergy scores are calculated as:</p>
+<div class="math notranslate nohighlight">
+\[
+E_{\mathrm{Bliss}} = V_{AB} - V_{A}V_{B}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(V_{AB}\)</span> denotes the viability under the combined perturbation, and <span class="math notranslate nohighlight">\(V_{A}\)</span> and <span class="math notranslate nohighlight">\(V_{B}\)</span> correspond to the respective single-perturbation conditions.</p>
+<p>Synergy excess values are stored in <code class="docutils literal notranslate"><span class="pre">Results/SynergyExcess.txt</span></code>, which contains a dataframe listing each perturbation pair together with its corresponding Bliss synergy excess score.</p>
+</section>
+</section>
+<hr class="docutils"/>
+<section id="count-paths-mode">
+<h2 id="count-paths-mode">2. Count Paths Mode<a class="headerlink" href="#count-paths-mode" title="Link to this heading">¶</a></h2>
+<p>The <strong>Count Paths Mode</strong> is invoked with <code class="docutils literal notranslate"><span class="pre">--mode</span> <span class="pre">countpaths</span></code> and is used to quantify signal propagation across the entire Boolean model by computing path counts toward <strong>every node</strong>, rather than only model output nodes. This mode is useful for exploring how perturbations reshape the internal signaling landscape of the model.</p>
+<p>To perform these computations, Oris reads the necessary data from the input ZIP archive:</p>
+<ul class="simple">
+<li><p>📁 <strong><a class="reference internal" href="../gitsbe/index.html#gitsbe-home"><span class="std std-ref">Gitsbe</span></a>-generated model ensemble</strong></p>
+<ul>
+<li><p>Full ensemble (if no sampling): <code class="docutils literal notranslate"><span class="pre">src/Models</span></code></p></li>
+<li><p>Sampled ensemble (if sampling enabled): <code class="docutils literal notranslate"><span class="pre">src/SampledModels</span></code></p></li>
+</ul>
+</li>
+<li><p>📃 <strong>Calibration data:</strong> <code class="docutils literal notranslate"><span class="pre">src/training</span></code></p></li>
+<li><p>📃 <strong><a class="reference internal" href="../drexpa/index.html#drexpa-home"><span class="std std-ref">Drexpa</span></a>-generated perturbations:</strong> <code class="docutils literal notranslate"><span class="pre">src/perturbations</span></code></p></li>
+<li><p><strong>📃 <a class="reference internal" href="../drexpa/index.html#drexpa-home"><span class="std std-ref">Drexpa</span></a>-generated drugpanel:</strong> <code class="docutils literal notranslate"><span class="pre">src/drugpanel</span></code></p></li>
+</ul>
+<p>As in other modes, initial conditions are applied (see <a class="reference internal" href="initialconditions.html"><span class="std std-doc"><em>Initial Conditions</em></span></a>) and, if enabled, model sampling is performed according the <code class="docutils literal notranslate"><span class="pre">--sampling</span></code> parameter. Perturbations are then introduced using <a class="reference external" href="https://github.com/farinasm/boolevard">BooLEVARD</a>’s <code class="docutils literal notranslate"><span class="pre">Pert</span></code> method, generating the corresponding <strong>single</strong> and <strong>double</strong> perturbation models using the information in the <code class="docutils literal notranslate"><span class="pre">perturbations</span></code> and <code class="docutils literal notranslate"><span class="pre">drugpanel</span></code> files.</p>
+<p>Once all model instances are prepared, Oris executes BooLEVARD’s  <code class="docutils literal notranslate"><span class="pre">CountPaths</span></code> method on each of them, computing path counts toward <strong>all Boolean nodes</strong>, providing a detailed view of signal flow under each perturbation condition.</p>
+<p>Simulation results are stored in <code class="docutils literal notranslate"><span class="pre">Results/PathCountsFull.txt</span></code> within the ZIP archive. The file is formatted as a dataframe, where each row corresponds to a stable state of a model instance and contains:</p>
+<ul class="simple">
+<li><p>the model identifier (model name + perturbation label),</p></li>
+<li><p>the evaluated stable state,</p></li>
+<li><p>the path counts for all Boolean nodes, and</p></li>
+<li><p>the Boolean activation states of those nodes.</p></li>
+</ul>
+</section>
+<hr class="docutils"/>
+<section id="full-mode">
+<h2 id="full-mode">3. Full Mode<a class="headerlink" href="#full-mode" title="Link to this heading">¶</a></h2>
+<p>The <strong>Full Mode</strong> is invoked with <code class="docutils literal notranslate"><span class="pre">--mode</span> <span class="pre">full</span></code> and performs both operations provided by the <code class="docutils literal notranslate"><span class="pre">synergy</span></code> and <code class="docutils literal notranslate"><span class="pre">countpaths</span></code> modes in a single execution. In practice, Oris computes:</p>
+<ol class="arabic simple">
+<li><p><strong>Bliss synergy excess</strong>, based on viability values derived from model outputs, and</p></li>
+<li><p><strong>global signal propagation</strong>, via path counting toward all Boolean nodes.</p></li>
+</ol>
+<p>This mode is useful when both internal signaling changes and drug combination effects are of interest.</p>
+<p>All intermediate steps (initial conditions, optional sampling, and perturbation generation) follow the same procedure described for the other modes. The resulting output files are writen to the <code class="docutils literal notranslate"><span class="pre">Results</span></code>directory within the input ZIP archive and include:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">PathCounts.txt</span></code> (path counts toward output nodes),</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SynegyExcess.txt</span></code> (Bliss synergy excess values), and</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PathCountsFull.txt</span></code> (path counts toward all Boolean nodes).</p></li>
+</ul>
+</section>
+</section>
+
+
+          </article>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="md-footer">
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="sampling.html" title="Sampling"
+               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+               rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span
+                      class="md-footer-nav__direction"> "Previous" </span> Sampling </span>
+              </div>
+            </a>
+          
+          
+            <a href="configuration.html" title="Configuration"
+               class="md-flex md-footer-nav__link md-footer-nav__link--next"
+               rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span
+                class="md-flex__ellipsis"> <span
+                class="md-footer-nav__direction"> "Next" </span> Configuration </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink"><i
+                class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          
+        </a>
+        
+      </nav>
+    </div>
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          <div class="md-footer-copyright__highlight">
+              &#169; Copyright 2026, Marco Fariñas and Viviam Bermúdez.
+              
+          </div>
+            Created using
+            <a href="http://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
+             and
+            <a href="https://github.com/bashtage/sphinx-material/">Material for
+              Sphinx</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="../_static/javascripts/application.js"></script>
+  <script>app.initialize({version: "1.0.4", url: {base: ".."}})</script>
+  </body>
+</html>

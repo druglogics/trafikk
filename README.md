@@ -21,7 +21,7 @@ Trafikk simulates drug perturbations on cell-line-calibrated Boolean models of c
 | **Synco**  | Benchmarks predictions against experimental synergy data using standard classification metrics (AUC-ROC, AUC-PR, F1, accuracy, recall, precision). |
 | **Siflex** | Performs pathway-level functional analysis of drug effects and generates mechanistic hypotheses for synergistic responses.                         |
 
-![Pipeline overview](figures/pipeline_overview.png)
+![Pipeline overview](src/overview.svg)
 
 ---
 

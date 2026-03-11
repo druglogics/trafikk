@@ -26,6 +26,8 @@ myst_enable_extensions = [
 templates_path = ['_templates']
 exclude_patterns = []
 
+suppress_warnings = ["config.cache"]
+
 source_suffix = {
     '.rst': 'restructuredtext',
     '.md': 'markdown',
