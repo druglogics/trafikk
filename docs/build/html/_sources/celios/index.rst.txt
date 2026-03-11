@@ -20,3 +20,9 @@ Each step can be skipped or customised via configuration. The pipeline is entire
    Installation <installation>
    Usage <usage>
    Configuration <configuration>
+
+----
+
+.. raw:: html
+
+   <p style="font-size:0.75rem;color:#999;margin-top:1rem;">Developed by V. Bermúdez</p>

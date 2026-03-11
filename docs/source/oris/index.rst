@@ -20,4 +20,10 @@ In addition to synergy scoring, Oris can also be used as a generic path-based si
    Modes <orismodes>
    Configuration <configuration>
 
+----
+
+.. raw:: html
+
+   <p style="font-size:0.75rem;color:#999;margin-top:1rem;">Developed by M. Fariñas</p>
+
 

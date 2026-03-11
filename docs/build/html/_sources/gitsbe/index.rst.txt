@@ -19,3 +19,9 @@ Each ensemble captures the diversity of Boolean rule sets compatible with the ex
 
    Gitsbe is a **Java** application maintained as part of the `DrugLogics <https://github.com/druglogics>`_ project.
    Full API documentation is available at `druglogics.github.io <https://druglogics.github.io/druglogics-doc/gitsbe.html>`_.
+
+----
+
+.. raw:: html
+
+   <p style="font-size:0.75rem;color:#999;margin-top:1rem;">Developed by J. Zobolas</p>

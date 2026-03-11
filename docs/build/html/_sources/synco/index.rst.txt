@@ -25,3 +25,9 @@ Features
    Overview <self>
    Installation <installation>
    Usage <usage>
+
+----
+
+.. raw:: html
+
+   <p style="font-size:0.75rem;color:#999;margin-top:1rem;">Developed by V. Bermúdez</p>

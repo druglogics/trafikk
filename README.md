@@ -39,6 +39,8 @@ Trafikk simulates drug perturbations on cell-line-calibrated Boolean models of c
 | 📊 | [**Synco**](https://github.com/ViviamSB/SYNCO) | Benchmarks predictions against experimental synergy data using standard classification metrics (AUC-ROC, AUC-PR, F1, accuracy, recall, precision) | Python |
 | 🔬 | [**Siflex**](https://github.com/druglogics/siflex) | Performs pathway-level functional analysis of drug effects and generates mechanistic hypotheses for synergistic responses | Python |
 
+<sub>Celios, Drexpa, Synco — V. Bermúdez · Gitsbe — J. Zobolas · Oris — M. Fariñas · Siflex — M. Fariñas, V. Bermúdez</sub>
+
 ## 🚀 Installation
 
 Each module is installed independently from its own repository:

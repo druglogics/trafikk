@@ -23,3 +23,9 @@ Features
    Installation <installation>
    Usage <usage>
    Configuration <configuration>
+
+----
+
+.. raw:: html
+
+   <p style="font-size:0.75rem;color:#999;margin-top:1rem;">Developed by M. Fariñas &amp; V. Bermúdez</p>

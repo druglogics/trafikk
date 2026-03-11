@@ -43,3 +43,9 @@ Drexpa automatically adapts to three execution modes:
    Installation <installation>
    Usage <usage>
    Configuration <configuration>
+
+----
+
+.. raw:: html
+
+   <p style="font-size:0.75rem;color:#999;margin-top:1rem;">Developed by V. Bermúdez</p>
