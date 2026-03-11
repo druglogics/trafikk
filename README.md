@@ -29,10 +29,10 @@ Trafikk simulates drug perturbations on cell-line-calibrated Boolean models of c
 
 Refer to each module's repository for specific installation instructions and dependencies:
 
-- [**Celios**](https://github.com/druglogics/trafikk/tree/main/Modules/celios)
+- [**Celios**](https://github.com/druglogics/celios)
 - [**Gitsbe**](https://github.com/druglogics/gitsbe)
 - [**Drexpa**](https://github.com/druglogics/drexpa)
-- [**Oris**](https://github.com/druglogics/trafikk/tree/main/Modules/oris)
+- [**Oris**](https://github.com/druglogics/oris)
 - [**Synco**](https://github.com/druglogics/synco)
 - [**Siflex**](https://github.com/druglogics/siflex)
 

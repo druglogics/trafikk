@@ -13,7 +13,7 @@ Dependencies: `Python 3.10+`, `boolevard`, `mpi4py`, `pandas`, `numpy`, `multipr
 To install Oris, run the following command:
 
 ```
-pip install git+https://github.com/farinasm/oris.git
+pip install git+https://github.com/druglogics/oris.git
 ```
 
 ## Quick Start
