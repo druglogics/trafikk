@@ -1,0 +1,67 @@
+# Oris Configuration
+# This config controls HPC scheduling, environment setup, and simulation parameters for Oris.
+# For more details, see: https://druglogics.github.io/trafikk/oris/
+
+# ==========================================
+# 🖥️ CLUSTER (SLURM)
+# ==========================================
+[slurm]
+# SLURM scheduling directives
+partition           = "CPUQ"              # Cluster queue/partition (change to your queue)
+account             = "myuser"            # Project account for billing (change to your account)
+time                = "24:00:00"          # Wall-time limit (HH:MM:SS)
+
+# Node allocation
+nodes               = 4                   # Number of compute nodes
+ntasks_per_node     = 14                  # MPI tasks per node (match your CPU cores per node)
+
+# Job output
+output              = "logs/oris_%j.out"  # Standard output log (%j = JobID)
+error               = "logs/oris_%j.err"  # Error log
+
+# Auto-submission (if true, Oris submits job automatically; if false, generates script only)
+auto_submit         = true
+
+# ==========================================
+# 🧬 ENVIRONMENT SETUP
+# ==========================================
+[env]
+# Shell commands to set up your HPC environment before job execution
+# Modify these module names to match your system (check: module avail)
+preamble = """
+module load intel/2024a
+module load SciPy-bundle/2024.05-gfbf-2024a
+module load Python/3.12.3-GCCcore-13.3.0
+"""
+
+# ==========================================
+# 🧠 ORIS SIMULATION PARAMETERS
+# ==========================================
+[oris]
+# Sampling strategy
+default_sampling     = 50                       # Default models to sample if --sampling not specified
+media_targets        = ["EGFR", "IGF1R", "MET"] # Media/input nodes forced ON during filtering
+
+# Simulation timeouts (seconds)
+timeout_sampling     = 300                      # Max time for sampling mode
+timeout_paths        = 600                      # Max time for full CountPaths analysis
+
+# ==========================================
+# USAGE NOTES
+# ==========================================
+# 1. Edit partition and account for your HPC system
+# 2. Update module names if different from Intel/SciPy/Python stack
+# 3. Adjust nodes/ntasks_per_node based on your cluster specs
+# 4. Set auto_submit = true for automatic submission, false to generate script only
+# 5. media_targets should match input/media nodes specific to your network
+
+# EXAMPLE COMMANDS:
+#
+# With config (auto-submit):
+#   oris --config config/oris.toml --zips runs/02_gitsbe/*.zip --mode full
+#
+# Manual SLURM submission:
+#   sbatch slurm/oris_jobs/run_oris.sh
+#
+# Local execution (no SLURM):
+#   oris --zips runs/02_gitsbe/CellLine_models.zip --mode synergies --sampling 20

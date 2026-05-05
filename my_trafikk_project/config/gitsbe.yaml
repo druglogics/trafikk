@@ -1,0 +1,36 @@
+# Gitsbe Configuration
+# Gitsbe generates Boolean model ensembles using genetic algorithm optimization.
+# For more details, see: https://druglogics.github.io/trafikk/gitsbe/
+
+# Input and output directories
+input_dir: "runs/01_celios/cell_lines"   # Celios activity matrices
+output_dir: "runs/02_gitsbe"             # Where to save model ensembles
+
+# Model generation parameters
+model_generation:
+  ensemble_size: 10000           # Number of models to generate (higher = more diverse)
+  max_generations: 500           # Genetic algorithm generations
+  population_size: 200           # GA population size
+  tournament_size: 3             # Tournament selection parameter
+  mutation_rate: 0.1             # Probability of random mutation
+
+# Fitting parameters (how closely models match the activity data)
+fitting:
+  # If set to 0, a perfect fit is required (strict mode)
+  max_fit_diff: 0                # Maximum difference from observed activity (0 = exact)
+
+# Parameterization options
+parameterization:
+  tie_breaking: "random"         # How to break ties: "random", "and_gate", "or_gate"
+  max_bp_states: 5000            # Maximum node states per simulation
+
+# Output options
+output:
+  save_models: true              # Save model files
+  verbose: false                 # Print progress info
+  seed: null                     # Set for reproducibility (null = random)
+
+# Advanced (usually defaults work fine)
+advanced:
+  population_restart_probability: 0.01  # Restart worst models periodically
+  mutation_type: "node_change"          # Type of mutation to apply
