@@ -52,7 +52,7 @@ pip install git+https://github.com/druglogics/drexpa.git
 pip install git+https://github.com/druglogics/oris.git
 pip install git+https://github.com/druglogics/siflex.git
 
-# Synco (notebook-based)
+# Synco
 pip install git+https://github.com/ViviamSB/SYNCO.git
 
 # Gitsbe — see its repo for Java build instructions
@@ -60,6 +60,36 @@ pip install git+https://github.com/ViviamSB/SYNCO.git
 ```
 
 > Refer to each module's repository for detailed dependency and environment requirements.
+
+## 🎯 Quick Start: Project Template
+
+For a **guided, structured setup**, use the **[TRAFIKK Project Template](my_trafikk_project/README.md)**:
+
+```bash
+# Copy the template to your workspace
+cp -r my_trafikk_project ~/my_analysis
+cd ~/my_analysis
+
+# Create environment and install (all versions pinned in requirements.txt)
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+# Start the pipeline
+python scripts/trafikk_status.py
+```
+
+The template includes:
+- ✓ Pre-organized folder structure
+- ✓ Configuration templates for all 6 steps
+- ✓ SLURM job scripts for HPC
+- ✓ Sample CCLE omics data (ready to test)
+- ✓ Beginner-friendly step-by-step guide
+- ✓ Pinned package versions (`requirements.txt`)
+
+**Best for:** New users, new projects, structured workflows.
+
+---
 
 ## 📖 Documentation
 

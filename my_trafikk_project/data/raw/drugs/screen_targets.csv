@@ -1,0 +1,6 @@
+drug_name,PubChemID,Pathway,target,drug_name2,concentration
+Sorafenib,216239,MAPK,"Raf, BRAF, DDR2, FGFR1, FLT1, FLT3, FLT4, KDR, KIT, PDGFRB, RAF1, RET",,3000
+Cobimetinib,16222096,MAPK,"MEK, MAP2K1","GDC-0973, RG7420",3000
+Navitoclax,24978538,Apoptosis,"Bcl-2, BCL2, BCL2L1, BCL2L2",ABT-263,3000
+Palbociclib,11431660,Cell Cycle,"CDK, ",PD-0332991,3000
+5Z-7-OXOZEAENOL,329818946,MAPK,"Tak1, ",,3000

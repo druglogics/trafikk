@@ -1,0 +1,1 @@
+my_trafikk_project/data/raw/omics/*.csv filter=lfs diff=lfs merge=lfs -text

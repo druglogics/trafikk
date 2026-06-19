@@ -6,24 +6,23 @@
     "base_data_dir": "data/raw"
   },
   "paths": {
-    "drug_names_file": "drugs/drug_names.txt",
-    "synergy_data_file": "drugs/synergy_data.csv",
-    "node_dict_file": "../01_celios/node_dictionary.csv",
-    "tissue_cline_file": "metadata/tissue_cellline_map.csv",
-    "db_file": null,
+    "drug_names_file": "drugs/screen_targets.csv",
+    "synergy_data_file": "drugs/experimental_synergies.csv",
+    "node_dict_file": "../01_celios/node_HGNC_dictionary.csv",
+    "tissue_cline_file": "metadata/cell_line_list.csv",
     "manual_chembl_csv": "drugs/manual_chembl.csv"
   },
   "columns": {
     "drug_name": "drug_name",
-    "drug_name_A": "drug_name_A",
-    "drug_name_B": "drug_name_B",
-    "conc_A": "conc_A",
-    "conc_B": "conc_B",
+    "concentration": "concentration",
+    "targets": "target",
+    "column_pubchem": "PubChemID",
     "cell_line": "cell_line",
     "synergy": "synergy",
     "tissue": "tissue"
   },
   "options": {
+    "use_pubchem_fallback": true,
     "synergy_threshold": 0.0,
     "double_drug_screen": true,
     "original_target_merge": "fill_missing"
